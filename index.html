@@ -21,9 +21,9 @@
                         <span class="spanlogo">Web</span>Studio
                     </a>
                     <ul class="navigation-list list">
-                        <li class="navigation-item"><a href="./index.html " class="links link">Студия</a></li>
-                        <li class="navigation-item"><a href="./portfolio.html" class="links">Портфолио</a></li>
-                        <li class="navigation-item"><a href="./index.html" class="links">Контакты</a></li>
+                        <li class="navigation-item"><a href="./index.html " class="nav-link links link activ">Студия</a></li>
+                        <li class="navigation-item"><a href="./portfolio.html" class="nav-link links">Портфолио</a></li>
+                        <li class="navigation-item"><a href="./index.html" class="nav-link links">Контакты</a></li>
                     </ul>
                 </nav>
                     <ul class="link-list list">
@@ -51,7 +51,7 @@
         <section class="hero">
                         <h1 class="hero-title title">Эффективные решения<br> для вашего бизнеса</h1>
                         
-                        <button type="button" class="hero-btn">Заказать услугу</button>
+                        <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
         </section>       
                 <!--RULES-->
         <section class="rules">
@@ -102,9 +102,18 @@
                     <div class="conteiner">
                         <h2 class="what-title title">Чем мы занимаемся</h2>
                         <ul class="what-list list">
-                            <li class="what-item"><img src="./img/komp.jpg" alt="компютер" width="370" class="what-img"></li>
-                            <li class="what-item"><img src="./img/tel.jpg" alt="телефон" width="370" class="what-img"></li>
-                            <li class="what-item"><img src="./img/tablet.jpg" alt="планшет" width="370" class="what-img"></li>
+                            <li class="what-item">
+                                    <img src="./img/komp.jpg" alt="компютер" width="370" class="what-img">
+                                    <p class="what-about">Десктопные приложения</p>
+                            </li>
+                            <li class="what-item">
+                                <img src="./img/tel.jpg" alt="телефон" width="370" class="what-img">
+                                <p class="what-about">Мобильные приложения</p>
+                            </li>
+                            <li class="what-item">
+                                <img src="./img/tablet.jpg" alt="планшет" width="370" class="what-img">
+                                <p class="what-about">Дизайнерские решения</p>
+                            </li>
                         </ul>
                     </div>
         </section>
@@ -365,5 +374,15 @@
             </div>
         </div>
     </footer>
+    <div class="backdrob is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" data-modal-close class="modal-close-bt">
+                <svg class="modal-icon">
+                    <use href="./img/symbol-defs.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

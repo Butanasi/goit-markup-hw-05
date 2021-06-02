@@ -137,8 +137,8 @@ footer {
 /* ==============MODAL WINDOW============== */
 .backdrob {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   left: 0;
   transform: scale(1);
@@ -158,14 +158,12 @@ footer {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50% -50%);
+  transform: translate(-50%, -50%);
 
   width: 528px;
   height: 581px;
   background-color: #fff;
 
-  left: 536px;
-  top: 221px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -234,15 +232,7 @@ footer {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.nav-link {
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: color var(--time-animation) var(--cubic),
-    text-shadow var(--time-animation) var(--cubic);
-}
-.nav-link:focus,
-.nav-link:hover {
-  text-shadow: none;
-}
+
 .link-list {
   display: flex;
   margin-left: auto;
